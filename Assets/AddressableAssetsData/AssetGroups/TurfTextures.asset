@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TurfTextures
+  m_EditorClassIdentifier: 
+  m_GroupName: TurfTextures
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4cc17b01bec48d4449920606d3a3bc83
+  m_SerializeEntries:
+  - m_GUID: 313fda432253ec144965ffcf3f6de7ad
+    m_Address: Assets/WorldGen/Turf/dirt/dirt.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - turf_texture
+  - m_GUID: c7feab0132e973746a2f30d2d7955b21
+    m_Address: Assets/WorldGen/Turf/forrest/forrest.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - turf_texture
+  - m_GUID: 90ec01cb6a00b7346a98ca63b485cbcb
+    m_Address: Assets/WorldGen/Turf/meadow/meadow.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - turf_texture
+  - m_GUID: 89d62c49ff1c07c4cb89e064d196212a
+    m_Address: Assets/WorldGen/Turf/rock/rock.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - turf_texture
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0f6a8d25d5006b944a84cfdbbfb36249, type: 2}
+  m_SchemaSet:
+    m_Schemas: []

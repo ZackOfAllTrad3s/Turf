@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TurfTiles
+  m_EditorClassIdentifier: 
+  m_GroupName: TurfTiles
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9306f67c1825d8542b7d4571ece39bd7
+  m_SerializeEntries:
+  - m_GUID: 221191938d4877b49a94a50f44d3cb7f
+    m_Address: Assets/WorldGen/Turf/dirt/tiles
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - dirt_tiles
+  - m_GUID: 3157850e03704d94186cbbc84c451729
+    m_Address: Assets/WorldGen/Turf/forrest/tiles
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - forrest_tiles
+  - m_GUID: 5426d1172f35763419bde9e8577532a1
+    m_Address: Assets/WorldGen/Turf/meadow/tiles
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - meadow_tiles
+  - m_GUID: afc62d6f2ae887b48b125eb3b3b929ef
+    m_Address: Assets/WorldGen/Turf/rock/tiles
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - rock_tiles
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0f6a8d25d5006b944a84cfdbbfb36249, type: 2}
+  m_SchemaSet:
+    m_Schemas: []
