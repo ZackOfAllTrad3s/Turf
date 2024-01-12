@@ -4,6 +4,17 @@
 
 >The assets that are in this repo are yours to use though.
 
+To get started open the Turf scene.
+
+To generate a new world use the WorldGen gameObject.
+
+<img src="media/worldgen.png" width="600px"/>
+
+<br>
+<br>
+
+# Tips on setting up a new scene
+
 ## Camera setup:
 
 A rotation of -45 feels good here, to zoom in and out change the y and z position values in lock step.
