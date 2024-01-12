@@ -37,6 +37,6 @@ For sorting to work make sure the game objects pivot point is at the bottom:
 
 In your Renderer2D settings use the drop down to set Transparency Sort Mode to Custom Axis, then set the Transparency Sort Axis to (0, 0.5, 0.5)
 
-<img src="media/renderer2D.png" width="500px"/>
+<img src="media/renderer2d.png" width="500px"/>
 
 
