@@ -38,8 +38,6 @@ public class WorldGen : MonoBehaviour
     private Vector2Int mapSize = new Vector2Int(128, 128);
     public Vector2Int MapSize => mapSize;
     [SerializeField]
-    private Vector2 noiseOffset;
-    [SerializeField]
     private float noiseScale;
     [SerializeField]
     private TurfData[] turfData;
@@ -49,7 +47,7 @@ public class WorldGen : MonoBehaviour
     private WorldSpawnerController spawnerController;
 
     public TurfData[,] TurfGrid { get; private set; }
-    
+
     public void GenerateWorld()
     {
         float worldHalfX = (mapSize.y / 2) * grid.cellSize.y;
@@ -63,7 +61,8 @@ public class WorldGen : MonoBehaviour
             WorldSize = new Vector2Int(mapSize.x * (int)grid.cellSize.x, mapSize.y * (int)grid.cellSize.y)
         };
 
-        float[,] noiseGrid = GenerateNoiseGrid(mapSize.x, mapSize.y, noiseScale, noiseOffset);
+        MinMax noiseOffset = new MinMax(-5000, 5000);
+        float[,] noiseGrid = GenerateNoiseGrid(mapSize.x, mapSize.y, noiseScale, noiseOffset.RandomVector2());
         TurfGrid = new TurfData[mapSize.x, mapSize.y];
         noiseGrid.ForEachParallel((x, y, noise) =>
         {
@@ -76,7 +75,7 @@ public class WorldGen : MonoBehaviour
                     return;
                 }
             }
-            Debug.LogError($"No module found for noise: {noise}");
+            Debug.LogError($"No turf found for noise: {noise}");
         });
 
 
@@ -96,6 +95,7 @@ public class WorldGen : MonoBehaviour
             // Matf.PerlinNoise expects the x and y to be normalized from 0 to 1
             float normalizedX = noiseOffset.x + x / (float)sizeX * noiseScale;
             float normalizedY = noiseOffset.y + y / (float)sizeY * noiseScale;
+            // ! This function actually returns values slightly below 0 and above 1, take that into account when making your turfData ranges.
             noiseGrid[x, y] = Mathf.PerlinNoise(normalizedX, normalizedY);
         });
 
