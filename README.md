@@ -1,5 +1,9 @@
 # Welcome
 
+This repo contains an example project showing how to use Unity tilemaps in a new way.
+
+<img src="media/header.png" width="1000px"/>
+
 > Obviously there are no Don't Starve assets in this repo, that would be illegal.
 
 >The assets that are in this repo are yours to use though.
